@@ -67,7 +67,7 @@ function clamp(num,min,max){
   return(Math.max(Math.min(num,max),min))
 }
 
-fetch('fencing.rbxlx').then(response => response.text()).then(function(data){
+fetch('crossroads.rbxlx').then(response => response.text()).then(function(data){
   const xml = new window.DOMParser().parseFromString(data, "text/xml");
   for (let i = 0, v; v = xml.getElementsByTagName("roblox")[0].getElementsByTagName("Item")[i]; i++) {
     if (v.getAttribute("class") == "Part"){
