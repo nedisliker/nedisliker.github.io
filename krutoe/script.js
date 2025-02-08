@@ -26,7 +26,6 @@ camera.keysRight = [68]; // D
 camera.speed = 10;
 camera.inertia = 0.1;
 camera.angularSensibility = 500;
-camera.maxZ = 100
 camera.attachControl(canvas, true);
 
 var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
